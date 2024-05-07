@@ -1,0 +1,322 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Connecting ...
+; Reading port file: file:///home/julien/Clojure%20dev%20/TDD/toy-robot-simulation/.nrepl-port ...
+; Using host:port localhost:33485 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉toy-robot-simulation.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉toy-robot-simulation.core꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+#'toy-robot-simulation.core-test/a-test
+clj꞉toy-robot-simulation.core-test꞉> 
+; 
+; FAIL in () (form-init17485306838931736090.clj:7)
+; expected: (= 0 1)
+;   actual: (not (= 0 1))
+false
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running all project tests…
+; Running all project tests…
+; Running previously failed tests…
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in Terminal: (cd /home/julien/Clojure dev /TDD/toy-robot-simulation; lein update-in :dependencies conj '[nrepl,"1.1.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.47.1"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:39879 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉toy-robot-simulation.core꞉> 
+; Jack-in done.
+clj꞉toy-robot-simulation.core꞉> 
+; Running all project tests…
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉toy-robot-simulation.core꞉> 
+#'toy-robot-simulation.core-test/a-test
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running all project tests…
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.core-test꞉> 
+#'toy-robot-simulation.core-test/b-test
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; ; FAIL in toy-robot-simulation.core-test/b-test (form-init4659445088053892471.clj:11):
+; ; FIXME, I fail.
+; ; expected:
+; 0
+; 
+; ; actual:
+; 1
+
+; 2 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 2
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; ; FAIL in toy-robot-simulation.core-test/b-test (form-init4659445088053892471.clj:11):
+; ; FIXME, I fail.
+; ; expected:
+; 0
+; 
+; ; actual:
+; 1
+
+; 2 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 2
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; ; FAIL in toy-robot-simulation.core-test/b-test (form-init4659445088053892471.clj:11):
+; ; FIXME, I fail.
+; ; expected:
+; 0
+; 
+; ; actual:
+; 1
+
+; 2 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 2
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; ; FAIL in toy-robot-simulation.core-test/b-test (form-init4659445088053892471.clj:11):
+; ; FIXME, I fail.
+; ; expected:
+; 0
+; 
+; ; actual:
+; 1
+
+; 2 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 2
+clj꞉toy-robot-simulation.core-test꞉> 
+#'toy-robot-simulation.core-test/b-test
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; 2 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.core-test꞉> 
+#'toy-robot-simulation.core/-main
+clj꞉toy-robot-simulation.core꞉> 
+; Evaluating file: core.clj
+#'toy-robot-simulation.core/-main
+clj꞉toy-robot-simulation.core꞉> 
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Aborting connect, error determining connect sequence.
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Aborting connect, error determining connect sequence.
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Aborting connect, error determining connect sequence.
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Aborting connect, error determining connect sequence.
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Aborting connect, error determining connect sequence.
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Aborting connect, error determining connect sequence.
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Aborting connect, error determining connect sequence.
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Aborting connect, error determining connect sequence.
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Aborting connect, error determining connect sequence.
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Aborting connect, error determining connect sequence.
+#'toy-robot-simulation.core-test/b-test
+clj꞉toy-robot-simulation.core-test꞉> 
+clojure.lang.RT/load (RT.java:462)
+clojure.core/load (core.clj:6162)
+clojure.core/load (core.clj:6161)
+clojure.core/load (core.clj:6145)
+clojure.core/load-one (core.clj:5934)
+clojure.core/load-one (core.clj:5929)
+clojure.core/load-lib (core.clj:5976)
+clojure.core/load-lib (core.clj:5975)
+clojure.core/load-lib (core.clj:5954)
+clojure.core/apply (core.clj:669)
+clojure.core/load-libs (core.clj:6017)
+clojure.core/load-libs (core.clj:6001)
+clojure.core/apply (core.clj:669)
+clojure.core/require (core.clj:6039)
+toy-robot-simulation.core-test/eval9038 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3216)
+clojure.core/eval (core.clj:3212)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:1570)
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; 2 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.core-test꞉> 
+#'toy-robot-simulation.core-test/a-test
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; 2 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.core-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.core-test
+
+; 2 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.core-test꞉> 
+clojure.lang.RT/load (RT.java:462)
+clojure.core/load (core.clj:6162)
+clojure.core/load (core.clj:6161)
+clojure.core/load (core.clj:6145)
+clojure.core/load-one (core.clj:5934)
+clojure.core/load-one (core.clj:5929)
+clojure.core/load-lib (core.clj:5976)
+clojure.core/load-lib (core.clj:5975)
+clojure.core/load-lib (core.clj:5954)
+clojure.core/apply (core.clj:669)
+clojure.core/load-libs (core.clj:6017)
+clojure.core/load-libs (core.clj:6001)
+clojure.core/apply (core.clj:669)
+clojure.core/require (core.clj:6039)
+toy-robot-simulation.core-test/eval9038 (NO_SOURCE_FILE:1)
+clojure.lang.Compiler/eval (Compiler.java:7194)
+clojure.core/eval (core.clj:3216)
+clojure.core/eval (core.clj:3212)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1990)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:1570)
+clj꞉toy-robot-simulation.core-test꞉> 
