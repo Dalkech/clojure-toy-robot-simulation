@@ -294,3 +294,55 @@ clj꞉toy-robot-simulation.toy-robot-test꞉> 
 clj꞉toy-robot-simulation.toy-robot-test꞉> 
 #'toy-robot-simulation.toy-robot/executeCommand
 clj꞉toy-robot-simulation.toy-robot꞉> 
+; Syntax error (IllegalArgumentException) compiling try at (commande_manager_test.clj:8:5).
+; Unable to resolve classname: (command/parse "WRONGCOMMAND 5 4 1")
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error (IllegalArgumentException) compiling try at (commande_manager_test.clj:8:5).
+; Unable to resolve classname: (command/parse "WRONGCOMMAND 5 4 1")
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error (IllegalArgumentException) compiling try at (commande_manager_test.clj:8:5).
+; Unable to resolve classname: (parse "WRONGCOMMAND 5 4 1")
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error (IllegalArgumentException) compiling try at (commande_manager_test.clj:8:5).
+; Unable to resolve classname: (parse "WRONGCOMMAND 5 4 1")
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Evaluating file: commande_manager_test.clj
+; 
+; ; clj  toy-robot-simulation.commande-manager-test 
+; Syntax error (IllegalArgumentException) compiling try at (commande_manager_test.clj:8:5).
+; Unable to resolve classname: (parse "WRONGCOMMAND 5 4 1")
+; Evaluation of file commande_manager_test.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error (IllegalArgumentException) compiling try at (commande_manager_test.clj:8:5).
+; Unable to resolve classname: (parse "WRONGCOMMAND 5 4 1")
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error (IllegalArgumentException) compiling try at (commande_manager_test.clj:8:5).
+; Unable to resolve classname: (parse "WRONGCOMMAND 5 4 1")
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error (IllegalArgumentException) compiling try at (commande_manager_test.clj:8:5).
+; Unable to resolve classname: parse
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error compiling at (commande_manager_test.clj:12:5).
+; Unable to resolve symbol: is in this context
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseCommand
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCommand (form-init15759808858481395987.clj:12):
+; ; wrong command
+; ; expected:
+; (thrown? Throwable (parse "WRONGCOMMAND 5 4 1"))
+; 
+; ; actual:
+; nil
+
+; 1 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commande-manager-test꞉> 

@@ -1,2 +1,4 @@
 (ns toy-robot-simulation.commande-manager)
-(defn parse [command])
+
+(defn parse [command]
+  "TODO")
