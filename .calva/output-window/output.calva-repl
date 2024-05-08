@@ -30,9 +30,14 @@ You can configure this with the setting:
   "calva.outputDestinations"
 
 
-; Connecting ...
-; Reading port file: file:///home/julien/Clojure%20dev%20/TDD/toy-robot-simulation/.nrepl-port ...
-; Using host:port localhost:33485 ...
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in Terminal: (cd /home/julien/Clojure dev /TDD/toy-robot-simulation; lein update-in :dependencies conj '[nrepl,"1.1.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.47.1"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:36089 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
@@ -41,282 +46,251 @@ clj꞉toy-robot-simulation.core꞉> 
 "Please see https://calva.io/output/#about-stdout-in-the-repl-window
 about why stdout printed to this file is prepended with `;` to be line comments."
 clj꞉toy-robot-simulation.core꞉> 
-; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
-
-; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
-
-; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
-
-; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
-
-#'toy-robot-simulation.core-test/a-test
-clj꞉toy-robot-simulation.core-test꞉> 
-; 
-; FAIL in () (form-init17485306838931736090.clj:7)
-; expected: (= 0 1)
-;   actual: (not (= 0 1))
-false
-clj꞉toy-robot-simulation.core-test꞉> 
-; Running all project tests…
-; Running all project tests…
-; Running previously failed tests…
-; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
-
-; nREPL Connection was closed
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in Terminal: (cd /home/julien/Clojure dev /TDD/toy-robot-simulation; lein update-in :dependencies conj '[nrepl,"1.1.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.47.1"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
-; Using host:port 127.0.0.1:39879 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
-nil
-clj꞉toy-robot-simulation.core꞉> 
 ; Jack-in done.
 clj꞉toy-robot-simulation.core꞉> 
-; Running all project tests…
-; No tests found. 😱, ns: 0, vars: 0
-clj꞉toy-robot-simulation.core꞉> 
-#'toy-robot-simulation.core-test/a-test
-clj꞉toy-robot-simulation.core-test꞉> 
-; Running all project tests…
-; 1 tests finished, all passing 👍, ns: 1, vars: 1
-clj꞉toy-robot-simulation.core-test꞉> 
+false
+clj꞉toy-robot-simulation.map꞉> 
+true
+clj꞉toy-robot-simulation.map꞉> 
+true
+clj꞉toy-robot-simulation.map꞉> 
+false
+clj꞉toy-robot-simulation.map꞉> 
+true
+clj꞉toy-robot-simulation.map꞉> 
+false
+clj꞉toy-robot-simulation.map꞉> 
+; Evaluating file: map_test.clj
+; 
+; ; clj  toy-robot-simulation.map-test 
+; Syntax error compiling at (map_test.clj:7:16).
+; No such namespace: map
+; Evaluation of file map_test.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉toy-robot-simulation.map-test꞉> 
+; Evaluating file: map_test.clj
+; 
+; Syntax error macroexpanding are at (map_test.clj:7:5).
+; The number of args doesn't match are's argv.
+; Evaluation of file map_test.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉toy-robot-simulation.map-test꞉> 
+; Syntax error macroexpanding are at (map_test.clj:7:5).
+; The number of args doesn't match are's argv.
+clj꞉toy-robot-simulation.map-test꞉> 
+; Syntax error compiling at (map_test.clj:7:5).
+; No such namespace: m
+; 
+; Syntax error compiling at (map_test.clj:23:9).
+; No such namespace: string
+clj꞉toy-robot-simulation.map-test꞉> 
+; Evaluating file: map_test.clj
+; 
+; Syntax error compiling at (map_test.clj:7:5).
+; No such namespace: m
+; Evaluation of file map_test.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.map/positionIsValid
+clj꞉toy-robot-simulation.map꞉> 
+; Syntax error compiling at (map_test.clj:7:5).
+; No such namespace: m
+; 
+; Syntax error compiling at (map_test.clj:23:9).
+; No such namespace: string
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.map-test/outOfBounds
+clj꞉toy-robot-simulation.map-test꞉> 
+; Evaluating file: map_test.clj
+#'toy-robot-simulation.map-test/outOfBounds
+clj꞉toy-robot-simulation.map-test꞉> 
 ; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
+;   toy-robot-simulation.map-test
 
 ; 1 tests finished, all passing 👍, ns: 1, vars: 1
-clj꞉toy-robot-simulation.core-test꞉> 
+clj꞉toy-robot-simulation.map-test꞉> 
+; Evaluating file: map_test.clj
+#'toy-robot-simulation.map-test/outOfBounds
+clj꞉toy-robot-simulation.map-test꞉> 
 ; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
+;   toy-robot-simulation.map-test
 
-; 1 tests finished, all passing 👍, ns: 1, vars: 1
-clj꞉toy-robot-simulation.core-test꞉> 
-; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
-
-; 1 tests finished, all passing 👍, ns: 1, vars: 1
-clj꞉toy-robot-simulation.core-test꞉> 
-; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
-
-; 1 tests finished, all passing 👍, ns: 1, vars: 1
-clj꞉toy-robot-simulation.core-test꞉> 
-#'toy-robot-simulation.core-test/b-test
-clj꞉toy-robot-simulation.core-test꞉> 
-; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
-
-; ; FAIL in toy-robot-simulation.core-test/b-test (form-init4659445088053892471.clj:11):
-; ; FIXME, I fail.
+; ; FAIL in toy-robot-simulation.map-test/outOfBounds (map_test.clj:7):
+; ; -1;0
 ; ; expected:
-; 0
+; (not (positionIsValid 0 0))
 ; 
 ; ; actual:
-; 1
+; (not (not true))
 
-; 2 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 2
-clj꞉toy-robot-simulation.core-test꞉> 
+; 2 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 1
+clj꞉toy-robot-simulation.map-test꞉> 
+; Evaluating file: map_test.clj
+#'toy-robot-simulation.map-test/outOfBounds
+clj꞉toy-robot-simulation.map-test꞉> 
 ; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
+;   toy-robot-simulation.map-test
 
-; ; FAIL in toy-robot-simulation.core-test/b-test (form-init4659445088053892471.clj:11):
-; ; FIXME, I fail.
+; 6 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.map-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.map-test
+
+; 6 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.map-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.map-test
+
+; 6 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.map-test/outOfBounds
+clj꞉toy-robot-simulation.map-test꞉> 
+; Evaluating file: map_test.clj
+#'toy-robot-simulation.map-test/inBounds
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.map-test/inBounds
+clj꞉toy-robot-simulation.map-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.map-test
+
+; ; FAIL in toy-robot-simulation.map-test/inBounds (form-init15759808858481395987.clj:19):
+; ; in bounds coordonates
 ; ; expected:
-; 0
+; (positionIsValid 6 -1)
 ; 
 ; ; actual:
-; 1
+; (not (positionIsValid 6 -1))
 
-; 2 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 2
-clj꞉toy-robot-simulation.core-test꞉> 
+; 12 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 2
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.map-test/inBounds
+clj꞉toy-robot-simulation.map-test꞉> 
 ; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
+;   toy-robot-simulation.map-test
 
-; ; FAIL in toy-robot-simulation.core-test/b-test (form-init4659445088053892471.clj:11):
-; ; FIXME, I fail.
+; ; FAIL in toy-robot-simulation.map-test/inBounds (form-init15759808858481395987.clj:19):
+; ; in bounds coordonates
 ; ; expected:
-; 0
+; (positionIsValid 7 2)
 ; 
 ; ; actual:
-; 1
+; (not (positionIsValid 7 2))
 
-; 2 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 2
-clj꞉toy-robot-simulation.core-test꞉> 
-; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
-
-; ; FAIL in toy-robot-simulation.core-test/b-test (form-init4659445088053892471.clj:11):
-; ; FIXME, I fail.
+; ; FAIL in toy-robot-simulation.map-test/inBounds (form-init15759808858481395987.clj:19):
+; ; in bounds coordonates
 ; ; expected:
-; 0
+; (positionIsValid 6 -1)
 ; 
 ; ; actual:
-; 1
+; (not (positionIsValid 6 -1))
 
-; 2 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 2
-clj꞉toy-robot-simulation.core-test꞉> 
-#'toy-robot-simulation.core-test/b-test
-clj꞉toy-robot-simulation.core-test꞉> 
+; 13 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 2
+clj꞉toy-robot-simulation.map-test꞉> 
 ; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
+;   toy-robot-simulation.map-test
 
-; 2 tests finished, all passing 👍, ns: 1, vars: 2
-clj꞉toy-robot-simulation.core-test꞉> 
-#'toy-robot-simulation.core/-main
-clj꞉toy-robot-simulation.core꞉> 
-; Evaluating file: core.clj
-#'toy-robot-simulation.core/-main
-clj꞉toy-robot-simulation.core꞉> 
-; Connecting using "undefined" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
+; ; FAIL in toy-robot-simulation.map-test/inBounds (form-init15759808858481395987.clj:19):
+; ; in bounds coordonates
+; ; expected:
+; (positionIsValid 7 2)
 ; 
+; ; actual:
+; (not (positionIsValid 7 2))
 
-; Aborting connect, error determining connect sequence.
-; Connecting using "undefined" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
+; ; FAIL in toy-robot-simulation.map-test/inBounds (form-init15759808858481395987.clj:19):
+; ; in bounds coordonates
+; ; expected:
+; (positionIsValid 6 -1)
 ; 
+; ; actual:
+; (not (positionIsValid 6 -1))
 
-; Aborting connect, error determining connect sequence.
-; Connecting using "undefined" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Aborting connect, error determining connect sequence.
-; Connecting using "undefined" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Aborting connect, error determining connect sequence.
-; Connecting using "undefined" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Aborting connect, error determining connect sequence.
-; Connecting using "undefined" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Aborting connect, error determining connect sequence.
-; Connecting using "undefined" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Aborting connect, error determining connect sequence.
-; Connecting using "undefined" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Aborting connect, error determining connect sequence.
-; Connecting using "undefined" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Aborting connect, error determining connect sequence.
-; Connecting using "undefined" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Aborting connect, error determining connect sequence.
-#'toy-robot-simulation.core-test/b-test
-clj꞉toy-robot-simulation.core-test꞉> 
-clojure.lang.RT/load (RT.java:462)
-clojure.core/load (core.clj:6162)
-clojure.core/load (core.clj:6161)
-clojure.core/load (core.clj:6145)
-clojure.core/load-one (core.clj:5934)
-clojure.core/load-one (core.clj:5929)
-clojure.core/load-lib (core.clj:5976)
-clojure.core/load-lib (core.clj:5975)
-clojure.core/load-lib (core.clj:5954)
-clojure.core/apply (core.clj:669)
-clojure.core/load-libs (core.clj:6017)
-clojure.core/load-libs (core.clj:6001)
-clojure.core/apply (core.clj:669)
-clojure.core/require (core.clj:6039)
-toy-robot-simulation.core-test/eval9038 (NO_SOURCE_FILE:1)
-clojure.lang.Compiler/eval (Compiler.java:7194)
-clojure.core/eval (core.clj:3216)
-clojure.core/eval (core.clj:3212)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
-clojure.core/apply (core.clj:667)
-clojure.core/with-bindings* (core.clj:1990)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
-clojure.main/repl (main.clj:437)
-clojure.main/repl (main.clj:458)
-clojure.main/repl (main.clj:368)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
-nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
-nrepl.middleware.session/session-exec (session.clj:218)
-nrepl.middleware.session/session-exec (session.clj:217)
-java.lang.Thread/run (Thread.java:1570)
-clj꞉toy-robot-simulation.core-test꞉> 
+; 13 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 2
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.map-test/inBounds
+clj꞉toy-robot-simulation.map-test꞉> 
 ; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
+;   toy-robot-simulation.map-test
 
-; 2 tests finished, all passing 👍, ns: 1, vars: 2
-clj꞉toy-robot-simulation.core-test꞉> 
-#'toy-robot-simulation.core-test/a-test
-clj꞉toy-robot-simulation.core-test꞉> 
+; 11 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.map-test꞉> 
+; Syntax error (ArityException) compiling at (toy_robot_test.clj:12:3).
+; Wrong number of args (1) passed to: clojure.test/are
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
+; Evaluating file: toy_robot_test.clj
+; 
+; ; clj  toy-robot-simulation.toy-robot-test 
+; Syntax error macroexpanding are at (toy_robot_test.clj:11:5).
+; The number of args doesn't match are's argv.
+; Evaluation of file toy_robot_test.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
+; Evaluating file: toy_robot_test.clj
+; 
+; Syntax error compiling at (toy_robot_test.clj:11:5).
+; No such var: robot/executeCommand
+; Evaluation of file toy_robot_test.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
+; Evaluating file: toy_robot.clj
+#'toy-robot-simulation.toy-robot/executeCommand
+clj꞉toy-robot-simulation.toy-robot꞉> 
+; Syntax error compiling at (toy_robot_test.clj:11:5).
+; No such namespace: command_manager
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
+; Evaluating file: toy_robot_test.clj
+; 
+; ; clj  toy-robot-simulation.toy-robot-test 
+; Syntax error compiling at (toy_robot_test.clj:11:5).
+; No such namespace: command_manager
+; Evaluation of file toy_robot_test.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
+; Evaluating file: toy_robot_test.clj
+; 
+; Syntax error compiling at (toy_robot_test.clj:12:5).
+; No such var: command_manager/parse
+; Evaluation of file toy_robot_test.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.toy-robot-test/placement
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
+; Running test: placement…
+; ; FAIL in toy-robot-simulation.toy-robot-test/placement (form-init15759808858481395987.clj:9):
+; ; Not yet placed
+; ; expected:
+; (string/blank? (robot/toString))
+; 
+; ; actual:
+; (not (string/blank? "ToDO"))
+
+; ; FAIL in toy-robot-simulation.toy-robot-test/placement (form-init15759808858481395987.clj:12):
+; ; initial placement
+; ; expected:
+; "0 0 NORTH"
+; 
+; ; actual:
+; "ToDo"
+
+; 2 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 1
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
+#'toy-robot-simulation.toy-robot-test/placement
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
 ; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
+;   toy-robot-simulation.toy-robot-test
 
-; 2 tests finished, all passing 👍, ns: 1, vars: 2
-clj꞉toy-robot-simulation.core-test꞉> 
-; Running tests for the following namespaces:
-;   toy-robot-simulation.core-test
+; ; FAIL in toy-robot-simulation.toy-robot-test/placement (form-init15759808858481395987.clj:9):
+; ; not yet placed
+; ; expected:
+; (string/blank? (robot/toString))
+; 
+; ; actual:
+; (not (string/blank? "ToDO"))
 
-; 2 tests finished, all passing 👍, ns: 1, vars: 2
-clj꞉toy-robot-simulation.core-test꞉> 
-clojure.lang.RT/load (RT.java:462)
-clojure.core/load (core.clj:6162)
-clojure.core/load (core.clj:6161)
-clojure.core/load (core.clj:6145)
-clojure.core/load-one (core.clj:5934)
-clojure.core/load-one (core.clj:5929)
-clojure.core/load-lib (core.clj:5976)
-clojure.core/load-lib (core.clj:5975)
-clojure.core/load-lib (core.clj:5954)
-clojure.core/apply (core.clj:669)
-clojure.core/load-libs (core.clj:6017)
-clojure.core/load-libs (core.clj:6001)
-clojure.core/apply (core.clj:669)
-clojure.core/require (core.clj:6039)
-toy-robot-simulation.core-test/eval9038 (NO_SOURCE_FILE:1)
-clojure.lang.Compiler/eval (Compiler.java:7194)
-clojure.core/eval (core.clj:3216)
-clojure.core/eval (core.clj:3212)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
-clojure.core/apply (core.clj:667)
-clojure.core/with-bindings* (core.clj:1990)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
-clojure.main/repl (main.clj:437)
-clojure.main/repl (main.clj:458)
-clojure.main/repl (main.clj:368)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
-nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
-nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
-nrepl.middleware.session/session-exec (session.clj:218)
-nrepl.middleware.session/session-exec (session.clj:217)
-java.lang.Thread/run (Thread.java:1570)
-clj꞉toy-robot-simulation.core-test꞉> 
+; ; FAIL in toy-robot-simulation.toy-robot-test/placement (form-init15759808858481395987.clj:12):
+; ; initial placement
+; ; expected:
+; "0 0 NORTH"
+; 
+; ; actual:
+; "ToDo"
+
+; 2 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 1
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
+#'toy-robot-simulation.toy-robot/executeCommand
+clj꞉toy-robot-simulation.toy-robot꞉> 
