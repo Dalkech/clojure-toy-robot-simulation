@@ -781,3 +781,676 @@ clj꞉toy-robot-simulation.commande-manager-test꞉> 
 
 ; 16 tests finished, all passing 👍, ns: 1, vars: 3
 clj꞉toy-robot-simulation.commande-manager-test꞉> 
+true
+clj꞉toy-robot-simulation.commands.place꞉> 
+true
+clj꞉toy-robot-simulation.map꞉> 
+false
+clj꞉toy-robot-simulation.map꞉> 
+; Syntax error compiling at (map.clj:19:8).
+; Unable to resolve symbol: positionInMapBounds in this context
+clj꞉toy-robot-simulation.map꞉> 
+#'toy-robot-simulation.map/positionIsValid
+clj꞉toy-robot-simulation.map꞉> 
+#'toy-robot-simulation.map-test/inBounds
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.map-test/inBounds
+clj꞉toy-robot-simulation.map-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.map-test
+
+; 12 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.map/positionIsValid
+clj꞉toy-robot-simulation.map꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Syntax error compiling at (commande_manager_test.clj:19:3).
+; Unable to resolve symbol: thrown? in this context
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; 16 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place/placeCommand
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place-test/placeCommand
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-te
+;   toy-robot-simulation.commands.place-test
+;   toy-robot-simulation.commands.place-tes
+;   toy-robot-simulation.commands.place-t
+;   toy-robot-simulation.commands.place-
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (form-init15759808858481395987.clj:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class java.lang.String (java.lang.Long and java.lang.String are in module java.base of loader 'bootstrap') (form-init15759808858481395987.clj:7)
+; expected:
+(empty (execute -1 -1 "NORTH"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (form-init15759808858481395987.clj:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class java.lang.String (java.lang.Long and java.lang.String are in module java.base of loader 'bootstrap') (form-init15759808858481395987.clj:7)
+; expected:
+(empty (execute 0 0 "NOPE"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (form-init15759808858481395987.clj:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class java.lang.String (java.lang.Long and java.lang.String are in module java.base of loader 'bootstrap') (form-init15759808858481395987.clj:7)
+; expected:
+(empty (execute 6 6 "KO"))
+
+; 3 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-te꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (form-init15759808858481395987.clj:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class java.lang.String (java.lang.Long and java.lang.String are in module java.base of loader 'bootstrap') (form-init15759808858481395987.clj:7)
+; expected:
+(empty (execute -1 -1 "NORTH"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (form-init15759808858481395987.clj:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class java.lang.String (java.lang.Long and java.lang.String are in module java.base of loader 'bootstrap') (form-init15759808858481395987.clj:7)
+; expected:
+(empty (execute 0 0 "NOPE"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (form-init15759808858481395987.clj:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class java.lang.String (java.lang.Long and java.lang.String are in module java.base of loader 'bootstrap') (form-init15759808858481395987.clj:7)
+; expected:
+(empty (execute 6 6 "KO"))
+
+; 3 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+#'toy-robot-simulation.commands.place-test/placeCommand
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty (execute "-1" "-1" "NORTH"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty (execute "0" "0" "NOPE"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty (execute "6" "6" "KO"))
+
+; 3 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.map/positionInMapBounds (form-init15759808858481395987.clj:5).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉toy-robot-simulation.commands.place꞉> 
+1
+clj꞉toy-robot-simulation.commands.place꞉> 
+-1
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty (execute "-1" "-1" "NORTH"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty (execute "0" "0" "NOPE"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty (execute "6" "6" "KO"))
+
+; 3 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty (execute "-1" "-1" "NORTH"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty (execute "0" "0" "NOPE"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty (execute "6" "6" "KO"))
+
+; 3 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+nil
+clj꞉toy-robot-simulation.commands.place꞉> 
+true
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.map-test
+
+; 12 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.commands.place-test/placeCommand
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+#'toy-robot-simulation.commands.place-test/placeCommand
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-te
+;   toy-robot-simulation.commands.place-test
+;   toy-robot-simulation.commands.place-tes
+;   toy-robot-simulation.commands.place-t
+;   toy-robot-simulation.commands.place-
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty? (execute "-1" "-1" "NORTH"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty? (execute "0" "0" "NOPE"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty? (execute "6" "6" "KO"))
+
+; 3 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-te꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place-test/placeCommand
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-te
+;   toy-robot-simulation.commands.place-test
+;   toy-robot-simulation.commands.place-tes
+;   toy-robot-simulation.commands.place-t
+;   toy-robot-simulation.commands.place-
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty? (execute "-1" "-1" "NORTH"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty? (execute "0" "0" "NOPE"))
+
+; ERROR in toy-robot-simulation.commands.place-test/placeCommand (Numbers.java:7):
+; multiple wrong placement
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(empty? (execute "6" "6" "KO"))
+
+; 3 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-te꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.map/positionInMapBounds (form-init15759808858481395987.clj:5).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉toy-robot-simulation.commands.place꞉> 
+{:x 1, :y 1, :direction "NORTH"}
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-te
+;   toy-robot-simulation.commands.place-test
+;   toy-robot-simulation.commands.place-tes
+;   toy-robot-simulation.commands.place-t
+;   toy-robot-simulation.commands.place-
+
+; 3 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-te꞉> 
+{:x 1, :y 2, :direction "NORTH"}
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Evaluating file: commande_manager.clj
+; 
+; ; clj  toy-robot-simulation.commande-manager 
+; Syntax error compiling at (commande_manager.clj:26:10).
+; No such namespace: place
+; Evaluation of file commande_manager.clj failed: class clojure.lang.Compiler$CompilerException
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error compiling at (commande_manager.clj:26:10).
+; No such namespace: place
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (4) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (4) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (4) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (4) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (4) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 16 tests finished, problems found. 😭 errors: 5, failures: 0, ns: 1, vars: 3
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+{0 "0", 1 "1"}
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval12586 (form-init15759808858481395987.clj:38).
+; Wrong number of args (4) passed to: clojure.core/get
+clj꞉toy-robot-simulation.commande-manager꞉> 
+nil
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval12590 (form-init15759808858481395987.clj:38).
+; Wrong number of args (4) passed to: clojure.core/subvec
+clj꞉toy-robot-simulation.commande-manager꞉> 
+("0" "0" "1" "2")
+clj꞉toy-robot-simulation.commande-manager꞉> 
+("0" "0" "1")
+clj꞉toy-robot-simulation.commande-manager꞉> 
+("0" "1" "2")
+clj꞉toy-robot-simulation.commande-manager꞉> 
+()
+clj꞉toy-robot-simulation.commande-manager꞉> 
+["0" "0" "1"]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+["0" "0" "1"]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"0"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"0"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+nil
+clj꞉toy-robot-simulation.commande-manager꞉> 
+nil
+clj꞉toy-robot-simulation.commande-manager꞉> 
+nil
+clj꞉toy-robot-simulation.commande-manager꞉> 
+["0" "1" "2"]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseGoodCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; {:x -1, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 16 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 3
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseGoodCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; {:x -1, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 16 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 3
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error compiling at (commande_manager_test.clj:19:3).
+; Unable to resolve symbol: thrown? in this context
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error compiling at (commande_manager_test.clj:19:3).
+; Unable to resolve symbol: thrown? in this context
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseGoodCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; {:x -1, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 16 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 3
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error compiling at (commande_manager_test.clj:19:3).
+; Unable to resolve symbol: thrown? in this context
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error compiling at (commande_manager_test.clj:19:3).
+; Unable to resolve symbol: thrown? in this context
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseGoodCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; {:x -1, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 16 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 3
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error compiling at (commande_manager_test.clj:19:3).
+; Unable to resolve symbol: thrown? in this context
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseGoodCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; {:x -1, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 16 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 3
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseCorrectCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; (parse "PLACE -1 3 WEST")
+; 
+; ; actual:
+; (not (parse "PLACE -1 3 WEST"))
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseGoodCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; {:x -1, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 21 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseCorrectCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; error: java.lang.Exception: wrong command :  (form-init15759808858481395987.clj:19)
+; expected:
+(parse nil)
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; error: java.lang.Exception: wrong command :  (form-init15759808858481395987.clj:19)
+; expected:
+(parse nil)
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; error: java.lang.Exception: wrong command :  (form-init15759808858481395987.clj:19)
+; expected:
+(parse nil)
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; error: java.lang.Exception: wrong command :  (form-init15759808858481395987.clj:19)
+; expected:
+(parse nil)
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; (parse "PLACE -1 3 WEST")
+; 
+; ; actual:
+; (not (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; error: java.lang.Exception: wrong command :  (form-init15759808858481395987.clj:19)
+; expected:
+(parse nil)
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseGoodCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; {:x -1, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 26 tests finished, problems found. 😭 errors: 5, failures: 2, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseCorrectCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; (nil? (parse "PLACE 1 2 NORTH"))
+; 
+; ; actual:
+; (not (nil? {:x 1, :y 2, :direction "NORTH"}))
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; (nil? (parse "PLACE 5 5 SOUTH"))
+; 
+; ; actual:
+; (not (nil? {:x 5, :y 5, :direction "SOUTH"}))
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; (nil? (parse "PLACE 4 4 EAST"))
+; 
+; ; actual:
+; (not (nil? {:x 4, :y 4, :direction "EAST"}))
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; (nil? (parse "PLACE 3 3 WEST"))
+; 
+; ; actual:
+; (not (nil? {:x 3, :y 3, :direction "WEST"}))
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseGoodCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; {:x -1, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 21 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+{:x 1, :y 2, :direction "NORTH"}
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; (nil? (parse "PLACE 1 2 NORTH"))
+; 
+; ; actual:
+; (not (nil? {:x 1, :y 2, :direction "NORTH"}))
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; (nil? (parse "PLACE 5 5 SOUTH"))
+; 
+; ; actual:
+; (not (nil? {:x 5, :y 5, :direction "SOUTH"}))
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; (nil? (parse "PLACE 4 4 EAST"))
+; 
+; ; actual:
+; (not (nil? {:x 4, :y 4, :direction "EAST"}))
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; (nil? (parse "PLACE 3 3 WEST"))
+; 
+; ; actual:
+; (not (nil? {:x 3, :y 3, :direction "WEST"}))
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseGoodCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; {:x -1, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 21 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseCorrectCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (Reflector.java:19):
+; error: java.lang.IllegalArgumentException: No matching field found: parse for class java.lang.String (Reflector.java:19)
+; expected:
+(.parse "PLACE 1 2 NORTH")
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (Reflector.java:19):
+; error: java.lang.IllegalArgumentException: No matching field found: parse for class java.lang.String (Reflector.java:19)
+; expected:
+(.parse "PLACE 5 5 SOUTH")
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (Reflector.java:19):
+; error: java.lang.IllegalArgumentException: No matching field found: parse for class java.lang.String (Reflector.java:19)
+; expected:
+(.parse "PLACE 4 4 EAST")
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (Reflector.java:19):
+; error: java.lang.IllegalArgumentException: No matching field found: parse for class java.lang.String (Reflector.java:19)
+; expected:
+(.parse "PLACE 3 3 WEST")
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (Reflector.java:19):
+; error: java.lang.IllegalArgumentException: No matching field found: parse for class java.lang.String (Reflector.java:19)
+; expected:
+(.parse "PLACE -1 3 WEST")
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseGoodCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; {:x -1, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 21 tests finished, problems found. 😭 errors: 5, failures: 1, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseCorrectCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; true
+; 
+; ; actual:
+; {:x 1, :y 2, :direction "NORTH"}
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; true
+; 
+; ; actual:
+; {:x 5, :y 5, :direction "SOUTH"}
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; true
+; 
+; ; actual:
+; {:x 4, :y 4, :direction "EAST"}
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; true
+; 
+; ; actual:
+; {:x 3, :y 3, :direction "WEST"}
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; true
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commande-manager-test/ParseGoodCommands (form-init15759808858481395987.clj:19):
+; ; expected:
+; {:x -1, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 21 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commands.place-test/placeCommand
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-te
+;   toy-robot-simulation.commands.place-test
+;   toy-robot-simulation.commands.place-tes
+;   toy-robot-simulation.commands.place-t
+;   toy-robot-simulation.commands.place-
+
+; 7 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-te꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-te
+;   toy-robot-simulation.commands.place-test
+;   toy-robot-simulation.commands.place-tes
+;   toy-robot-simulation.commands.place-t
+;   toy-robot-simulation.commands.place-
+
+; 7 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-te꞉> 

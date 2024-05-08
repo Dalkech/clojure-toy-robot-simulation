@@ -1,8 +1,20 @@
 (ns toy-robot-simulation.map)
 
-(defn positionIsValid [x y] 
-  (and (<= x 5)
-       (> x -1)
-       (<= y 5)
-       (> y -1))
+(defn- positionInMapBounds[x y] 
+ (let [max 5 minExcluded -1] 
+   (and (<= x max)
+        (> x minExcluded)
+        (<= y max)
+        (> y minExcluded)
+   )
+  )
+)
+
+(defn- directionIsCorrect [direction]
+  (contains? #{"NORTH" "WEST" "SOUTH" "EAST"} direction)
+  )
+
+(defn positionIsValid [x y direction] 
+  (and (positionInMapBounds x y ) 
+       (directionIsCorrect direction))
   )

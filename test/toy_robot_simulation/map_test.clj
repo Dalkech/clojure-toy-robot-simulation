@@ -4,25 +4,26 @@
 
 (deftest outOfBounds
   (testing "out of bounds coordonates"
-    (are [x y] (not (positionIsValid x y))
-      -1 0
-      0 -1
-      6 5
-      5 6
-      6 6 
-      -1 -1
+    (are [x y direction] (not (positionIsValid x y direction))
+      -1 0 "NORTH"
+      0 -1 "EAST"
+      6 5 "SOUTH"
+      5 6 "WEST"
+      6 6 ""
+      -1 -1 ""
+      1 1 "NOHRT"
       )
     ) 
   )
 
 (deftest inBounds
   (testing "in bounds coordonates"
-    (are [x y] (positionIsValid x y)
-      0 0
-      1 1
-      5 5
-      0 5
-      5 0
+    (are [x y direction] (positionIsValid x y direction)
+      0 0 "NORTH"
+      1 1 "EAST"
+      5 5 "SOUTH"
+      0 5 "WEST"
+      5 0 "NORTH"
       )
     )
   )

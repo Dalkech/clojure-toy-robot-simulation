@@ -1,0 +1,1 @@
+["^ ","~$placeCommand",["^ ","~:row",5,"~:col",1,"~:fixed-arities",["~#set",[0]],"~:name","^0","~:ns","~$toy-robot-simulation.commands.place-te","~:top-ns","^7"],"~:filename","/home/julien/Clojure dev /TDD/toy-robot-simulation/test/toy_robot_simulation/commands/place_test.clj"]
