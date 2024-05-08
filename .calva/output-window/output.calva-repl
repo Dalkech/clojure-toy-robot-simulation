@@ -3179,3 +3179,341 @@ clj꞉toy-robot-simulation.commands.place-t꞉> 
 clj꞉toy-robot-simulation.commands.place-te꞉> 
 nil
 clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#function[toy-robot-simulation.commande-manager/fn--14770]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#function[toy-robot-simulation.commande-manager/eval14775/fn--14776]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+nil
+clj꞉toy-robot-simulation.commande-manager꞉> 
+nil
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval14840 (form-init15759808858481395987.clj:35).
+; Wrong number of args (0) passed to: toy-robot-simulation.commande-manager/fn--14833
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error compiling at (commande_manager.clj:24:5).
+; Unable to resolve symbol: command-name in this context
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#function[clojure.core/keyword]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+:REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+:REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error compiling at (commande_manager.clj:29:9).
+; Unable to resolve symbol: toy-robot-coordonate in this context
+; 
+; Syntax error reading source at (REPL:29:67).
+; Unmatched delimiter: )
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error compiling at (commande_manager.clj:1:8397).
+; Unable to resolve symbol: do in this context
+; 
+; Syntax error compiling at (commande_manager.clj:1:8397).
+; Unable to resolve symbol: toy-robot-coordonate in this context
+; 
+; Syntax error reading source at (REPL:29:66).
+; Unmatched delimiter: )
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error compiling at (commande_manager.clj:1:8397).
+; Unable to resolve symbol: do in this context
+; 
+; Syntax error compiling at (commande_manager.clj:1:8397).
+; Unable to resolve symbol: toy-robot-coordonate in this context
+; 
+; Syntax error reading source at (REPL:29:66).
+; Unmatched delimiter: )
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#function[toy-robot-simulation.commande-manager/fn--14870]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error reading source at (REPL:30:1).
+; EOF while reading, starting at line 29
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#function[toy-robot-simulation.commande-manager/fn--14870]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error compiling at (commande_manager.clj:29:9).
+; Unable to resolve symbol: toy-robot-coordonate in this context
+; 
+; Syntax error reading source at (REPL:29:64).
+; Unmatched delimiter: )
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:30).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error compiling at (commande_manager.clj:1:8397).
+; Can't take value of a macro: #'clojure.core/defn
+; 
+; Syntax error compiling at (commande_manager.clj:1:8397).
+; Unable to resolve symbol: command in this context
+; 
+; Syntax error compiling at (commande_manager.clj:20:9).
+; Unable to resolve symbol: command in this context
+; 
+; Syntax error compiling at (commande_manager.clj:23:26).
+; Unable to resolve symbol: command in this context
+; 
+; Syntax error reading source at (REPL:35:4).
+; Unmatched delimiter: )
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:30).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; REPORT
+; TEST
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:31).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:29).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:31).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:32).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:32).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval14983 (form-init15759808858481395987.clj:25).
+; Wrong number of args (0) passed to: toy-robot-simulation.commande-manager/fn--14967
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#function[toy-robot-simulation.commande-manager/fn--14967]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"  "
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"  "
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:32).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error reading source at (REPL:25:1).
+; EOF while reading, starting at line 24
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error reading source at (REPL:25:1).
+; EOF while reading, starting at line 24
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error reading source at (REPL:25:1).
+; EOF while reading, starting at line 24
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#function[toy-robot-simulation.commande-manager/fn--14967]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+((commandes (keyword "REPORT")) {:x 1, :y 2, :direction "NORTH"})
+clj꞉toy-robot-simulation.commande-manager꞉> 
+((commandes (keyword "REPORT")) {:x 1, :y 2, :direction "NORTH"})
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"1 2 NORTH"
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#function[toy-robot-simulation.commande-manager/eval15012/fn--15013]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#function[toy-robot-simulation.commande-manager/eval15016/fn--15017]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+{:x 1, :y 2, :direction "NORTH"}
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error compiling at (commande_manager.clj:25:15).
+; Unable to resolve symbol: command in this context
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error compiling at (commande_manager.clj:25:17).
+; Unable to resolve symbol: command in this context
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval15029 (form-init15759808858481395987.clj:25).
+; Wrong number of args (3) passed to: toy-robot-simulation.commande-manager/fn--14967
+clj꞉toy-robot-simulation.commande-manager꞉> 
+{:x 1, :y 2, :direction "NORTH"}
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+{:x 1, :y 2, :direction "NORTH"}
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+{:x 1, :y 2, :direction "NORTH"}
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:36).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15047
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:36).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15047
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:36).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15047
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error reading source at (REPL:26:5).
+; Unmatched delimiter: )
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:34).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15047
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:34).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15047
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval15072 (form-init15759808858481395987.clj:34).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15047
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval15074 (form-init15759808858481395987.clj:34).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15047
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/commandes
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval15080 (form-init15759808858481395987.clj:34).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15076
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error reading source at (REPL:22:65).
+; Unmatched delimiter: )
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval15086 (form-init15759808858481395987.clj:22).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15076
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval15088 (form-init15759808858481395987.clj:22).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15076
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#function[toy-robot-simulation.commande-manager/fn--15076]
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval15092 (form-init15759808858481395987.clj:22).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15076
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"  "
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/eval15096 (form-init15759808858481395987.clj:22).
+; Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/fn--15076
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/commandes
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"  "
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : REPORT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+"  "
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:7).
+; wrong command : CHOCOLAT
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ArityException) at toy-robot-simulation.toy-robot/eval15130 (form-init15759808858481395987.clj:23).
+; Wrong number of args (0) passed to: clojure.lang.PersistentHashSet
+clj꞉toy-robot-simulation.toy-robot꞉> 
+#{"TWO" "ONE"}
+clj꞉toy-robot-simulation.toy-robot꞉> 

@@ -20,5 +20,9 @@
           (conj coordonate newPosition)))
   )
 
+#{"ONE" "TWO"}
+{"ONE" "TWO"}
+
+
 
 
