@@ -1454,3 +1454,1728 @@ clj꞉toy-robot-simulation.commands.place-te꞉> 
 
 ; 7 tests finished, all passing 👍, ns: 1, vars: 1
 clj꞉toy-robot-simulation.commands.place-te꞉> 
+#'toy-robot-simulation.map-test/inBounds
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+false
+clj꞉toy-robot-simulation.toy-robot꞉> 
+; Syntax error macroexpanding clojure.core/defn at (place.clj:25:1).
+; if - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+; (if (= 1 0) ("KO")) - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place/toto
+clj꞉toy-robot-simulation.commands.place꞉> 
+"OK"
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place-test/placeCommand
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-te
+;   toy-robot-simulation.commands.place-test
+;   toy-robot-simulation.commands.place-tes
+;   toy-robot-simulation.commands.place-t
+;   toy-robot-simulation.commands.place-
+
+; 7 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-te꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseWrongCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 21 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseWrongCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 21 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error macroexpanding are at (toy_robot_test.clj:11:5).
+; The number of args doesn't match are's argv.
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 21 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 21 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Syntax error macroexpanding are at (commande_manager_test.clj:8:5).
+; The number of args doesn't match are's argv.
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseWrongCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 21 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:8).
+; wrong command : WRONGCOMMAND 5 4 1
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:8).
+; wrong command : WRONGCOMMAND 5 4 1
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseWrongCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseWrongCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 26 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 26 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commands.place-test/ignore
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; 10 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; 10 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+#'toy-robot-simulation.commands.place-test/ignore
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "NORTH" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "NORTH"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "EAST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "EAST"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "5" "5" "WEST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 5, :y 5, :direction "WEST"}))
+
+; 10 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "NORTH" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "NORTH"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "EAST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "EAST"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "5" "5" "WEST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 5, :y 5, :direction "WEST"}))
+
+; 10 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "NORTH" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "NORTH"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "EAST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "EAST"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "5" "5" "WEST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 5, :y 5, :direction "WEST"}))
+
+; 10 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "NORTH" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "NORTH"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "EAST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "EAST"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "5" "5" "WEST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 5, :y 5, :direction "WEST"}))
+
+; 10 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "NORTH" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "NORTH"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "EAST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "EAST"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "5" "5" "WEST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 5, :y 5, :direction "WEST"}))
+
+; 10 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "NORTH" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "NORTH"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "EAST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "EAST"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "5" "5" "WEST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 5, :y 5, :direction "WEST"}))
+
+; 10 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+#'toy-robot-simulation.commands.place-test/ignore
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "NORTH" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "NORTH"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "EAST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "EAST"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "5" "5" "WEST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 5, :y 5, :direction "WEST"}))
+
+; 10 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+{:x 1, :y 1, :direction "NORTH"}
+clj꞉toy-robot-simulation.commands.place꞉> 
+{:x 1, :y 1, :direction "NORTH"}
+clj꞉toy-robot-simulation.commands.place꞉> 
+nil
+clj꞉toy-robot-simulation.commands.place꞉> 
+nil
+clj꞉toy-robot-simulation.commands.place꞉> 
+{:x 1, :y 1, :direction "NORTH"}
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.toy-robot-test
+
+; ; FAIL in toy-robot-simulation.toy-robot-test/placement (form-init15759808858481395987.clj:9):
+; ; not yet placed
+; ; expected:
+; (string/blank? (robot/toString))
+; 
+; ; actual:
+; (not (string/blank? "ToDO"))
+
+; ERROR in toy-robot-simulation.toy-robot-test/placement (AFn.java:12):
+; initial placement
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:12)
+; expected:
+(=
+ "0 0 NORTH"
+ (->
+  (command_manager/parse ["PLACE 0 0 NORTH"])
+  (robot/executeCommand)))
+
+; 2 tests finished, problems found. 😭 errors: 1, failures: 1, ns: 1, vars: 1
+clj꞉toy-robot-simulation.toy-robot-test꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; 10 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Syntax error compiling at (commande_manager.clj:26:5).
+; Can't take value of a macro: #'clojure.core/when
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 26 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 26 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 26 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; 10 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running test: placeCommand…
+; 7 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running test: ignore…
+; 3 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 26 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.toy-robot/executeCommand
+clj꞉toy-robot-simulation.toy-robot꞉> 
+{:a 2, :b 2}
+clj꞉toy-robot-simulation.toy-robot꞉> 
+; Syntax error compiling at (toy_robot.clj:17:3).
+; Can't take value of a macro: #'clojure.core/when
+clj꞉toy-robot-simulation.toy-robot꞉> 
+nil
+clj꞉toy-robot-simulation.toy-robot꞉> 
+false
+clj꞉toy-robot-simulation.toy-robot꞉> 
+false
+clj꞉toy-robot-simulation.toy-robot꞉> 
+true
+clj꞉toy-robot-simulation.toy-robot꞉> 
+false
+clj꞉toy-robot-simulation.toy-robot꞉> 
+true
+clj꞉toy-robot-simulation.toy-robot꞉> 
+false
+clj꞉toy-robot-simulation.toy-robot꞉> 
+; Syntax error compiling at (toy_robot.clj:16:3).
+; Can't take value of a macro: #'clojure.core/when
+clj꞉toy-robot-simulation.toy-robot꞉> 
+#'toy-robot-simulation.toy-robot/executeCommand
+clj꞉toy-robot-simulation.toy-robot꞉> 
+#'toy-robot-simulation.toy-robot/executeCommand
+clj꞉toy-robot-simulation.toy-robot꞉> 
+#'toy-robot-simulation.toy-robot/executeCommand
+clj꞉toy-robot-simulation.toy-robot꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:23).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.toy-robot꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:23).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.toy-robot꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:23).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:23).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error reading source at (REPL:31:1).
+; EOF while reading, starting at line 17
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:23).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.toy-robot꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:23).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:23).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error compiling at (commande_manager.clj:18:9).
+; No such namespace: str
+; 
+; Syntax error compiling at (commande_manager.clj:21:3).
+; No such namespace: str
+; 
+; Syntax error reading source at (REPL:21:39).
+; Unmatched delimiter: )
+clj꞉user꞉> 
+; #function[clojure.string/split] PLACE 1 1 NORTH #" "
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:25).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; #function[clojure.string/split] PLACE 1 1 NORTH #" "
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:25).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; #function[clojure.string/split] PLACE 1 1 NORTH
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:25).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; [PLACE 1 1 NORTH]
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:25).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:6).
+; wrong command : PLACE 1 1 NORTH
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:23).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+true
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:23).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+{:x 1, :y 2, :direction "NORTH"}
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:23).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:23).
+; class java.lang.Boolean cannot be cast to class clojure.lang.IFn (java.lang.Boolean is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+true
+clj꞉toy-robot-simulation.commande-manager꞉> 
+true
+clj꞉toy-robot-simulation.commande-manager꞉> 
+true
+clj꞉toy-robot-simulation.commande-manager꞉> 
+true
+clj꞉toy-robot-simulation.commande-manager꞉> 
+true
+clj꞉toy-robot-simulation.commande-manager꞉> 
+true
+clj꞉toy-robot-simulation.commande-manager꞉> 
+true
+clj꞉toy-robot-simulation.commande-manager꞉> 
+true
+clj꞉toy-robot-simulation.commande-manager꞉> 
+nil
+clj꞉toy-robot-simulation.commande-manager꞉> 
+nil
+clj꞉toy-robot-simulation.commande-manager꞉> 
+()
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; PLACE
+true
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; PLACE
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/isValidCommand (form-init15759808858481395987.clj:10).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; PLACE
+; PLACE
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/isValidCommand (form-init15759808858481395987.clj:11).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; PLACE
+; PLACE
+true
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; PLACE
+; Execution error at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:24).
+; OK
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Syntax error reading source at (REPL:36:2).
+; Unmatched delimiter: )
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; PLACE
+; Execution error at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:25).
+; OK
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; PLACE
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:25).
+; Wrong number of args (1) passed to: toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; PLACE
+; Execution error (ArityException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:25).
+; Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; PLACE
+; Execution error (ClassCastException) at toy-robot-simulation.commande-manager/parse (form-init15759808858481395987.clj:25).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.lang.Number (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; PLACE
+{:x 1, :y 1, :direction "NORTH"}
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; PLACE
+nil
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:6).
+; wrong command : PLACE 1 1 NORTH
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Execution error at toy-robot-simulation.commande-manager/throwWrongCommandException (form-init15759808858481395987.clj:6).
+; wrong command : PLACE 1 1 NORTH
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseWrongCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 21 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 21 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 21 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 21 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 21 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+#'toy-robot-simulation.commande-manager-test/ParseWrongCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Evaluating file: commande_manager_test.clj
+#'toy-robot-simulation.commande-manager-test/ParseWrongCommands
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running all project tests…
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commands.place/placeCommand (AFn.java:7):
+; multiple wrong placement
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:7)
+; expected:
+(empty (execute -1 -1 "NORTH"))
+
+; ERROR in toy-robot-simulation.commands.place/placeCommand (AFn.java:7):
+; multiple wrong placement
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:7)
+; expected:
+(empty (execute 0 0 "NOPE"))
+
+; ERROR in toy-robot-simulation.commands.place/placeCommand (AFn.java:7):
+; multiple wrong placement
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: toy-robot-simulation.commands.place/execute (AFn.java:7)
+; expected:
+(empty (execute 6 6 "KO"))
+
+; ERROR in toy-robot-simulation.toy-robot-test/placement (AFn.java:12):
+; initial placement
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:12)
+; expected:
+(=
+ "0 0 NORTH"
+ (->
+  (command_manager/parse ["PLACE 0 0 NORTH"])
+  (robot/executeCommand)))
+
+; 48 tests finished, problems found. 😭 errors: 14, failures: 0, ns: 5, vars: 10
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+;   toy-robot-simulation.commande-manager
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseCorrectCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= true (parse "PLACE -1 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 1, :y 2, :direction "NORTH"} (parse "PLACE 1 2 NORTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 5, :y 5, :direction "SOUTH"} (parse "PLACE 5 5 SOUTH"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 4, :y 4, :direction "EAST"} (parse "PLACE 4 4 EAST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x 3, :y 3, :direction "WEST"} (parse "PLACE 3 3 WEST"))
+
+; ERROR in toy-robot-simulation.commande-manager-test/ParseGoodCommands (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: toy-robot-simulation.commande-manager/parse (AFn.java:19)
+; expected:
+(= {:x -1, :y 3, :direction "WEST"} (parse "PLACE -1 3 WEST"))
+
+; 21 tests finished, problems found. 😭 errors: 10, failures: 0, ns: 1, vars: 4
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Running test: ParseWrongCommands…
+; 5 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+; Execution error (IllegalAccessError) at toy-robot-simulation.commands.place/eval14553$loading (form-init15759808858481395987.clj:1).
+; alreadyPlaced does not exist
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.report/execute
+clj꞉toy-robot-simulation.commands.report꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.report-test
+
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉toy-robot-simulation.commands.report-test꞉> 
+#'toy-robot-simulation.commands.report-test/placeCommand
+clj꞉toy-robot-simulation.commands.report-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.report-test
+
+; ; FAIL in toy-robot-simulation.commands.report-test/placeCommand (form-init15759808858481395987.clj:7):
+; ; multiple wrong placements
+; ; expected:
+; (empty? (execute {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? "12NORTH"))
+
+; 1 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.report-test꞉> 
+#'toy-robot-simulation.commands.report/execute
+clj꞉toy-robot-simulation.commands.report꞉> 
+#'toy-robot-simulation.commands.report-test/placeCommand
+clj꞉toy-robot-simulation.commands.report-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.report-test
+
+; ; FAIL in toy-robot-simulation.commands.report-test/placeCommand (form-init15759808858481395987.clj:7):
+; ; multiple wrong placements
+; ; expected:
+; "1 1 NORTH"
+; 
+; ; actual:
+; "12NORTH"
+
+; 1 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.report-test꞉> 
+#'toy-robot-simulation.commands.report/execute
+clj꞉toy-robot-simulation.commands.report꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.report-test
+
+; ; FAIL in toy-robot-simulation.commands.report-test/placeCommand (form-init15759808858481395987.clj:7):
+; ; multiple wrong placements
+; ; expected:
+; "1 1 NORTH"
+; 
+; ; actual:
+; "1 2 NORTH"
+
+; 1 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.report-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.report-test
+
+; ; FAIL in toy-robot-simulation.commands.report-test/placeCommand (form-init15759808858481395987.clj:7):
+; ; multiple wrong placements
+; ; expected:
+; "1 1 NORTH"
+; 
+; ; actual:
+; "1 2 NORTH"
+
+; 1 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.report-test꞉> 
+#'toy-robot-simulation.commands.report-test/placeCommand
+clj꞉toy-robot-simulation.commands.report-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.report-test
+
+; 2 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.report-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-te
+;   toy-robot-simulation.commands.place-test
+;   toy-robot-simulation.commands.place-tes
+;   toy-robot-simulation.commands.place-t
+;   toy-robot-simulation.commands.place-
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "NORTH" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "NORTH"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "0" "0" "EAST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 0, :y 0, :direction "EAST"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/ignore (form-init15759808858481395987.clj:23):
+; ; already placed robot
+; ; expected:
+; (empty? (execute "5" "5" "WEST" {:x 1, :y 2, :direction "NORTH"}))
+; 
+; ; actual:
+; (not (empty? {:x 5, :y 5, :direction "WEST"}))
+
+; ; FAIL in toy-robot-simulation.commands.place-test/placeCommand (form-init15759808858481395987.clj:13):
+; ; good placements
+; ; expected:
+; {:x 1, :y 1, :direction "NORTH"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.place-test/placeCommand (form-init15759808858481395987.clj:13):
+; ; good placements
+; ; expected:
+; {:x 2, :y 0, :direction "EAST"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.place-test/placeCommand (form-init15759808858481395987.clj:13):
+; ; good placements
+; ; expected:
+; {:x 0, :y 1, :direction "SOUTH"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.place-test/placeCommand (form-init15759808858481395987.clj:13):
+; ; good placements
+; ; expected:
+; {:x 5, :y 5, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; 10 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-te꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+nil
+clj꞉toy-robot-simulation.commands.place꞉> 
+nil
+clj꞉toy-robot-simulation.commands.place꞉> 
+{:x 1, :y 2, :direction "NORTH"}
+clj꞉toy-robot-simulation.commands.place꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; 10 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-t
+;   toy-robot-simulation.commands.place-te
+;   toy-robot-simulation.commands.place-tes
+;   toy-robot-simulation.commands.place-test
+;   toy-robot-simulation.commands.place-
+
+; 10 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-t꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-te
+;   toy-robot-simulation.commands.place-test
+;   toy-robot-simulation.commands.place-tes
+;   toy-robot-simulation.commands.place-t
+;   toy-robot-simulation.commands.place-
+
+; 10 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-te꞉> 
+nil
+clj꞉toy-robot-simulation.commande-manager꞉> 
