@@ -3,6 +3,10 @@
             [toy-robot-simulation.commands.place :as place]
             [toy-robot-simulation.commands.report :as report]))
 
+(defn- splitCommand[command] 
+  (str/split command #" ")
+  )
+
 (defn- throwWrongCommandException [command]
   (throw (Exception. (str "wrong command : " command))))
 
@@ -10,13 +14,13 @@
   (contains? #{"PLACE" "MOVE" "LEFT" "RIGHT" "REPORT"} command-name))
 
 (defn- isValidPLACECOMMAND? [splitted-command]
-  (and (= "PLACE" (first splitted-command)) (<= 4 (count splitted-command))))
+  (and (= "PLACE" (first splitted-command)) (>= 3 (count splitted-command))))
 
 (defn parse [command toy-robot-coordonate]
   (when (str/blank? command)
     (throwWrongCommandException command))
 
-  (let [splitted-command (str/split command #" ") 
+  (let [splitted-command (splitCommand command) 
         command-name (first splitted-command)]
     (if (isValidCommand? command-name)
       (if (isValidPLACECOMMAND? splitted-command)
@@ -29,3 +33,4 @@
       )
     ) 
   )
+

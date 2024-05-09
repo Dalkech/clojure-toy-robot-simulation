@@ -1,28 +1,27 @@
 (ns toy-robot-simulation.toy-robot
-  (:require [toy-robot-simulation.commande-manager :as commande-manager]))
+  (:require [toy-robot-simulation.commande-manager :as commande-manager]
+            ))
 
-(def ^{:private true} coordonate
+(def ^{:private true} coordinates
   {})
 
-(defn toString []
-  (str (:x coordonate "")
-       (:y coordonate "")
-       (:direction coordonate ""))
+(defn- setCoordinates [newCoordinates] 
+  (def ^{:private true} coordinates (conj coordinates newCoordinates))
   )
 
-(defn alreadyPlaced [coordonate]
-  (not(= {} coordonate))
-  ) 
+(defn toString []
+  (if (= {} coordinates) ""
+     (str (:x coordinates) \space
+          (:y coordinates) \space
+          (:direction coordinates)))
+  )
+
+(toString)
   
 (defn executeCommand [command]
-  (let [newPosition (commande-manager/parse command coordonate)]
+  (let [newPosition (commande-manager/parse command coordinates)] 
+    (println newPosition)
     (when (not (nil? newPosition))
-          (conj coordonate newPosition)))
+      ;; keeping the position as a private internal state; see later to avoid mutability
+          (setCoordinates newPosition)))
   )
-
-#{"ONE" "TWO"}
-{"ONE" "TWO"}
-
-
-
-

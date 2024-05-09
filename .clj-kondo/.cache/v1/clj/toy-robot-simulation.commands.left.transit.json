@@ -1,0 +1,1 @@
+["^ ","~$execute",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$toy-robot-simulation.commands.left","~:top-ns","^7","~:type","~:fn"],"~:filename","/home/julien/Clojure dev /TDD/toy-robot-simulation/src/toy_robot_simulation/commands/left.clj"]
