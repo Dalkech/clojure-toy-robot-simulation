@@ -1,17 +1,18 @@
-(ns toy-robot-simulation.map)
+(ns toy-robot-simulation.map 
+  (:require [toy-robot-simulation.global-constant :refer [CARDINALS
+                                                          MAX_EXCLUDED
+                                                          MIN_EXCLUDED]]))
 
 (defn- positionInMapBounds[x y] 
- (let [max 5 minExcluded -1] 
-   (and (<= x max)
-        (> x minExcluded)
-        (<= y max)
-        (> y minExcluded)
+   (and (< x MAX_EXCLUDED)
+        (> x MIN_EXCLUDED)
+        (< y MAX_EXCLUDED)
+        (> y MIN_EXCLUDED)
    )
-  )
 )
 
 (defn- directionIsCorrect [direction]
-  (contains? #{"NORTH" "WEST" "SOUTH" "EAST"} direction)
+  (contains? CARDINALS direction)
   )
 
 (defn positionIsValid [x y direction] 

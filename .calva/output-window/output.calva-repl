@@ -1600,3 +1600,536 @@ clj꞉toy-robot-simulation.commands.left-test꞉> 
 
 ; 4 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 1
 clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.left-test
+
+; ; FAIL in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 1, :y 1, :direction "WEST"}
+; 
+; ; actual:
+; [{:x 1, :y 1, :direction "NORTH"}]
+
+; ; FAIL in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 0, :y 0, :direction "SOUTH"}
+; 
+; ; actual:
+; [{:x 0, :y 0, :direction "WEST"}]
+
+; ; FAIL in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 2, :y 3, :direction "EAST"}
+; 
+; ; actual:
+; [{:x 2, :y 3, :direction "SOUTH"}]
+
+; ; FAIL in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 5, :y 2, :direction "NORTH"}
+; 
+; ; actual:
+; [{:x 5, :y 2, :direction "EAST"}]
+
+; 4 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Execution error (IllegalArgumentException) at toy-robot-simulation.commands.left/eval14229 (form-init5647331043525636039.clj:8).
+; Don't know how to create ISeq from: clojure.lang.Keyword
+clj꞉toy-robot-simulation.commands.left꞉> 
+{:x 1, :direction "titi"}
+clj꞉toy-robot-simulation.commands.left꞉> 
+#'toy-robot-simulation.commands.left/execute
+clj꞉toy-robot-simulation.commands.left꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.left-test
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; error: java.lang.IllegalArgumentException: No matching clause:  (form-init5647331043525636039.clj:7)
+; expected:
+(=
+ {:x 1, :y 1, :direction "WEST"}
+ (left/execute [{:x 1, :y 1, :direction "NORTH"}]))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; error: java.lang.IllegalArgumentException: No matching clause:  (form-init5647331043525636039.clj:7)
+; expected:
+(=
+ {:x 0, :y 0, :direction "SOUTH"}
+ (left/execute [{:x 0, :y 0, :direction "WEST"}]))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; error: java.lang.IllegalArgumentException: No matching clause:  (form-init5647331043525636039.clj:7)
+; expected:
+(=
+ {:x 2, :y 3, :direction "EAST"}
+ (left/execute [{:x 2, :y 3, :direction "SOUTH"}]))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; error: java.lang.IllegalArgumentException: No matching clause:  (form-init5647331043525636039.clj:7)
+; expected:
+(=
+ {:x 5, :y 2, :direction "NORTH"}
+ (left/execute [{:x 5, :y 2, :direction "EAST"}]))
+
+; 4 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.left-test
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; error: java.lang.IllegalArgumentException: No matching clause:  (form-init5647331043525636039.clj:7)
+; expected:
+(=
+ {:x 1, :y 1, :direction "WEST"}
+ (left/execute [{:x 1, :y 1, :direction "NORTH"}]))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; error: java.lang.IllegalArgumentException: No matching clause:  (form-init5647331043525636039.clj:7)
+; expected:
+(=
+ {:x 0, :y 0, :direction "SOUTH"}
+ (left/execute [{:x 0, :y 0, :direction "WEST"}]))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; error: java.lang.IllegalArgumentException: No matching clause:  (form-init5647331043525636039.clj:7)
+; expected:
+(=
+ {:x 2, :y 3, :direction "EAST"}
+ (left/execute [{:x 2, :y 3, :direction "SOUTH"}]))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; error: java.lang.IllegalArgumentException: No matching clause:  (form-init5647331043525636039.clj:7)
+; expected:
+(=
+ {:x 5, :y 2, :direction "NORTH"}
+ (left/execute [{:x 5, :y 2, :direction "EAST"}]))
+
+; 4 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+#'toy-robot-simulation.commands.left-test/rotate
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+#'toy-robot-simulation.commands.left-test/rotate
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.left-test
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (AFn.java:7):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:7)
+; expected:
+(=
+ {:x 1, :y 1, :direction "WEST"}
+ (left/execute {:x 1, :y 1, :direction "NORTH"}))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (AFn.java:7):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:7)
+; expected:
+(=
+ {:x 0, :y 0, :direction "SOUTH"}
+ (left/execute {:x 0, :y 0, :direction "WEST"}))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (AFn.java:7):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:7)
+; expected:
+(=
+ {:x 2, :y 3, :direction "EAST"}
+ (left/execute {:x 2, :y 3, :direction "SOUTH"}))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (AFn.java:7):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:7)
+; expected:
+(=
+ {:x 5, :y 2, :direction "NORTH"}
+ (left/execute {:x 5, :y 2, :direction "EAST"}))
+
+; 4 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.left-test
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (AFn.java:7):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:7)
+; expected:
+(=
+ {:x 1, :y 1, :direction "WEST"}
+ (left/execute {:x 1, :y 1, :direction "NORTH"}))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (AFn.java:7):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:7)
+; expected:
+(=
+ {:x 0, :y 0, :direction "SOUTH"}
+ (left/execute {:x 0, :y 0, :direction "WEST"}))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (AFn.java:7):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:7)
+; expected:
+(=
+ {:x 2, :y 3, :direction "EAST"}
+ (left/execute {:x 2, :y 3, :direction "SOUTH"}))
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (AFn.java:7):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:7)
+; expected:
+(=
+ {:x 5, :y 2, :direction "NORTH"}
+ (left/execute {:x 5, :y 2, :direction "EAST"}))
+
+; 4 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commands.left/newDirection (form-init5647331043525636039.clj:3).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commands.left/newDirection (form-init5647331043525636039.clj:3).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commands.left/newDirection (form-init5647331043525636039.clj:3).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commands.left/newDirection (form-init5647331043525636039.clj:3).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉toy-robot-simulation.commands.left꞉> 
+; Execution error (IllegalArgumentException) at toy-robot-simulation.commands.left/newDirection (form-init5647331043525636039.clj:4).
+; Don't know how to create ISeq from: clojure.lang.Keyword
+clj꞉toy-robot-simulation.commands.left꞉> 
+; Execution error (IllegalArgumentException) at toy-robot-simulation.commands.left/newDirection (form-init5647331043525636039.clj:4).
+; Don't know how to create ISeq from: clojure.lang.Keyword
+clj꞉toy-robot-simulation.commands.left꞉> 
+{:x 1, :y 1, :direction "SOUTH"}
+clj꞉toy-robot-simulation.commands.left꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.left-test
+
+; 4 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+#'toy-robot-simulation.commands.left-test/rotate
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.left-test
+
+; ERROR in toy-robot-simulation.commands.left-test/rotate (form-init5647331043525636039.clj:7):
+; error: java.lang.IllegalArgumentException: No matching clause:  (form-init5647331043525636039.clj:7)
+; expected:
+(= nil (left/execute {}))
+
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Execution error (IllegalArgumentException) at toy-robot-simulation.commands.left/execute (form-init5647331043525636039.clj:12).
+; No matching clause: 
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Execution error (IllegalArgumentException) at toy-robot-simulation.commands.left/execute (form-init5647331043525636039.clj:12).
+; No matching clause: 
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Execution error (IllegalArgumentException) at toy-robot-simulation.commands.left/execute (form-init5647331043525636039.clj:12).
+; No matching clause: 
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Execution error (IllegalArgumentException) at toy-robot-simulation.commands.left/execute (form-init5647331043525636039.clj:12).
+; No matching clause: 
+clj꞉toy-robot-simulation.commands.left꞉> 
+nil
+clj꞉toy-robot-simulation.commands.left꞉> 
+nil
+clj꞉toy-robot-simulation.commands.left꞉> 
+#'toy-robot-simulation.commands.left-test/rotate
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.left-test
+
+; 5 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+#'toy-robot-simulation.commands.right/execute
+clj꞉toy-robot-simulation.commands.right꞉> 
+#'toy-robot-simulation.commands.right/execute
+clj꞉toy-robot-simulation.commands.right꞉> 
+#'toy-robot-simulation.commands.right-test/rotate
+clj꞉toy-robot-simulation.commands.right-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.right-test
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 1, :y 1, :direction "EAST"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 0, :y 0, :direction "SOUTH"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 2, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 5, :y 2, :direction "NORTH"}
+; 
+; ; actual:
+; nil
+
+; 5 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.right-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.right-test
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 1, :y 1, :direction "EAST"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 0, :y 0, :direction "SOUTH"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 2, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 5, :y 2, :direction "NORTH"}
+; 
+; ; actual:
+; nil
+
+; 5 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.right-test꞉> 
+#'toy-robot-simulation.commands.right/execute
+clj꞉toy-robot-simulation.commands.right꞉> 
+#'toy-robot-simulation.commands.right-test/rotate
+clj꞉toy-robot-simulation.commands.right-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.right-test
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 1, :y 1, :direction "EAST"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 0, :y 0, :direction "SOUTH"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 2, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 5, :y 2, :direction "NORTH"}
+; 
+; ; actual:
+; nil
+
+; 5 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.right-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.right-test
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 1, :y 1, :direction "EAST"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 0, :y 0, :direction "SOUTH"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 2, :y 3, :direction "WEST"}
+; 
+; ; actual:
+; nil
+
+; ; FAIL in toy-robot-simulation.commands.right-test/rotate (form-init5647331043525636039.clj:7):
+; ; expected:
+; {:x 5, :y 2, :direction "NORTH"}
+; 
+; ; actual:
+; nil
+
+; 5 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.right-test꞉> 
+#'toy-robot-simulation.commands.right-test/rotate
+clj꞉toy-robot-simulation.commands.right-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.right-test
+
+; 5 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.right-test꞉> 
+; Execution error (IllegalArgumentException) at toy-robot-simulation.global-constant/eval14851 (form-init5647331043525636039.clj:12).
+; Wrong number of args passed to keyword: :direction
+clj꞉toy-robot-simulation.global-constant꞉> 
+; Execution error (IllegalArgumentException) at toy-robot-simulation.global-constant/eval14853 (form-init5647331043525636039.clj:12).
+; Wrong number of args passed to keyword: :direction
+clj꞉toy-robot-simulation.global-constant꞉> 
+; Execution error (IllegalArgumentException) at toy-robot-simulation.global-constant/eval14865 (form-init5647331043525636039.clj:12).
+; Wrong number of args passed to keyword: :direction
+clj꞉toy-robot-simulation.global-constant꞉> 
+; Execution error (IllegalArgumentException) at toy-robot-simulation.global-constant/eval14877 (form-init5647331043525636039.clj:10).
+; Wrong number of args passed to keyword: :direction
+clj꞉toy-robot-simulation.global-constant꞉> 
+:direction
+clj꞉toy-robot-simulation.global-constant꞉> 
+:x
+clj꞉toy-robot-simulation.global-constant꞉> 
+:x
+clj꞉toy-robot-simulation.global-constant꞉> 
+#'toy-robot-simulation.global-constant/DIRECTION_KEY
+clj꞉toy-robot-simulation.global-constant꞉> 
+; Syntax error compiling at (global_constant.clj:1:8396).
+; Unable to resolve symbol: CARDINALS in this context
+clj꞉toy-robot-simulation.global-constant꞉> 
+#{"SOUTH" "EAST" "NORTH" "WEST"}
+clj꞉toy-robot-simulation.global-constant꞉> 
+true
+clj꞉toy-robot-simulation.map꞉> 
+false
+clj꞉toy-robot-simulation.map꞉> 
+#'toy-robot-simulation.global-constant/MAX_EXCLUDED
+clj꞉toy-robot-simulation.global-constant꞉> 
+#'toy-robot-simulation.map-test/inBounds
+clj꞉toy-robot-simulation.map-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.map-test
+
+; 12 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.map/positionIsValid
+clj꞉toy-robot-simulation.map꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.map-test
+
+; 12 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.map-test꞉> 
+#'toy-robot-simulation.toy-robot/executeCommand
+clj꞉toy-robot-simulation.toy-robot꞉> 
+; Running test: multiplePlacement…
+; {:x 0, :y 0, :direction NORTH}
+; {:x 1, :y 1, :direction WEST}
+; {:x 1, :y 5, :direction SOUTH}
+; 3 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.toy-robot꞉> 
+; Running test: emptyPosition…
+; 1 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.toy-robot꞉> 
+; Execution error (ArityException) at toy-robot-simulation.global-constant/eval15145 (form-init5647331043525636039.clj:17).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉toy-robot-simulation.global-constant꞉> 
+; Execution error (ArityException) at toy-robot-simulation.global-constant/eval15147 (form-init5647331043525636039.clj:17).
+; Wrong number of args (0) passed to: clojure.lang.PersistentHashSet
+clj꞉toy-robot-simulation.global-constant꞉> 
+false
+clj꞉toy-robot-simulation.global-constant꞉> 
+true
+clj꞉toy-robot-simulation.global-constant꞉> 
+true
+clj꞉toy-robot-simulation.global-constant꞉> 
+true
+clj꞉toy-robot-simulation.global-constant꞉> 
+#'toy-robot-simulation.commands.place-test/ignore
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.place-test
+
+; 10 tests finished, all passing 👍, ns: 1, vars: 2
+clj꞉toy-robot-simulation.commands.place-test꞉> 
+#'toy-robot-simulation.commands.place/execute
+clj꞉toy-robot-simulation.commands.place꞉> 
+; Syntax error macroexpanding clojure.core/cond at (right.clj:12:5).
+; cond requires an even number of forms
+clj꞉toy-robot-simulation.commands.right꞉> 
+#'toy-robot-simulation.commands.right/execute
+clj꞉toy-robot-simulation.commands.right꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.right-test
+
+; 5 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.right-test꞉> 
+#'toy-robot-simulation.commands.left/execute
+clj꞉toy-robot-simulation.commands.left꞉> 
+#'toy-robot-simulation.commands.left-test/rotate
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.left-test
+
+; 5 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.left-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.right-test
+
+; 5 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.right-test꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+#'toy-robot-simulation.commande-manager/parse
+clj꞉toy-robot-simulation.commande-manager꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commande-manager-test
+
+; 5 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commande-manager-test꞉> 
+nil
+clj꞉toy-robot-simulation.commands.move꞉> 
+; Syntax error compiling at (move.clj:7:1).
+; Unable to resolve symbol: execute in this context
+clj꞉toy-robot-simulation.commands.move꞉> 
+; Execution error (ArityException) at toy-robot-simulation.commands.move/execute (form-init5647331043525636039.clj:5).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉toy-robot-simulation.commands.move꞉> 
+{:x 1}
+clj꞉toy-robot-simulation.commands.move꞉> 
+; Syntax error macroexpanding are at (move_test.clj:7:5).
+; The number of args doesn't match are's argv.
+clj꞉toy-robot-simulation.commands.move-test꞉> 
+#'toy-robot-simulation.commands.move-test/moveCommand
+clj꞉toy-robot-simulation.commands.move-test꞉> 
+; Running tests for the following namespaces:
+;   toy-robot-simulation.commands.move-test
+
+; ; FAIL in toy-robot-simulation.commands.move-test/moveCommand (form-init5647331043525636039.clj:7):
+; ; allowed move from different placements
+; ; expected:
+; {:x 0, :y 1, :direction "NORTH"}
+; 
+; ; actual:
+; {:x 0, :y 0, :direction "NORTH"}
+
+; ; FAIL in toy-robot-simulation.commands.move-test/moveCommand (form-init5647331043525636039.clj:16):
+; ; not setted
+; ; expected:
+; (nil? (move/execute {}))
+; 
+; ; actual:
+; (not (nil? {}))
+
+; 3 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 1
+clj꞉toy-robot-simulation.commands.move-test꞉> 
