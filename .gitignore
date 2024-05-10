@@ -10,4 +10,5 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
-.calva/output-window/output.calva-repl
+.calva/output-window/*
+.clj-kondo/.cache/*

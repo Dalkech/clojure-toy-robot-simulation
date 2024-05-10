@@ -1,4 +1,4 @@
-(ns toy-robot-simulation.commands.move-test(:require [clojure.test :refer :all]
+(ns toy-robot-simulation.commands.move-test(:require [clojure.test :refer [deftest testing are is] ]
                                                      [toy-robot-simulation.commands.move :as move]))
 
 (deftest moveCommand
@@ -13,6 +13,6 @@
       {:x 5 :y 5 :direction "NORTH"} {:x 5 :y 5 :direction "NORTH"}))
   
   (testing "not setted"
-    (is (nil? (move/execute {})))
+    (is (empty? (move/execute {})))
     )
   )

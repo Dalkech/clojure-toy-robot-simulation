@@ -13,4 +13,3 @@
 ;; map bounds
 (def ^:const MIN_EXCLUDED -1)
 (def ^:const MAX_EXCLUDED 6)
-

@@ -1,5 +1,5 @@
 (ns toy-robot-simulation.commands.left-test
-  (:require [clojure.test :refer :all]
+  (:require [clojure.test :refer [deftest testing are] ]
             [toy-robot-simulation.commands.left :as left]))
 
 (deftest rotate

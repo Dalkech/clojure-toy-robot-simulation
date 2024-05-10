@@ -1,5 +1,5 @@
 (ns toy-robot-simulation.commande-manager-test
-  (:require [clojure.test :refer [deftest testing are is]]
+  (:require [clojure.test :refer [deftest testing are]]
              [toy-robot-simulation.commande-manager :refer [parse]]))
 
 (deftest ParseWrongCommands
@@ -13,3 +13,12 @@
      )
     )
   )
+
+(deftest ParseGOODCommands
+  (testing "multiple wrong command"
+    (are [expected command coordinates] (= expected (parse command coordinates))
+      {:x 1 :y 1 :direction "NORTH"} "PLACE 1 1 NORTH" {}  
+      {:x 1 :y 0 :direction "SOUTH"} "MOVE" {:x 1 :y 1 :direction "SOUTH"}  
+      {:x 1 :y 1 :direction "EAST"} "LEFT" {:x 1 :y 1 :direction "SOUTH"} 
+      {:x 5 :y 5 :direction "NORTH"} "RIGHT" {:x 5 :y 5 :direction "WEST"} 
+      "0 0 WEST" "REPORT" {:x 0 :y 0 :direction "WEST"})))

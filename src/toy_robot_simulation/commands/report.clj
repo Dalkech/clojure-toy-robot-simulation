@@ -1,10 +1,10 @@
-(ns toy-robot-simulation.commands.report)
+(ns toy-robot-simulation.commands.report
+  (:require [toy-robot-simulation.global-constant :refer [DIRECTION_KEY X_KEY
+                                                          Y_KEY]]))
 
-(defn execute [toy-robot-coordonate]
-  (when ()   
-  (str (:x toy-robot-coordonate "") \space
-       (:y toy-robot-coordonate "") \space
-       (:direction toy-robot-coordonate "")
-       )
-    )
-  )
+(defn execute [coordinates]
+  (when (seq coordinates)
+    (str (X_KEY coordinates) 
+         \space (Y_KEY coordinates) 
+         \space (DIRECTION_KEY coordinates))))
+
