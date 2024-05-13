@@ -16,7 +16,7 @@ In order to run the application, use 'lein run' inline command
 ## Usage
 
 all tests scenarios are in 
-[text](test/toy_robot_simulation/toy_robot_test.clj)
+[test/toy_robot_simulation/toy_robot_test.clj](test/toy_robot_simulation/toy_robot_test.clj)
 you can execute the tests if you want to avoid running the program
 
 In order to run all tests, use 'lein test' inline command
