@@ -1,44 +1,22 @@
 # toy-robot-simulation
 
-FIXME: description
+This is my execution of the clojure code kata "toy-robot-simulator".
+If you run it, the core program will read user's inputs to interract with the robot.
 
-## Installation
+Only the following commands are accepted :
+   1) PLACE x y direction"
+   2) LEFT"
+   3) RIGHT"
+   4) MOVE"
+   5) REPORT"
+enter "exit" to leave the program
 
-Download from http://example.com/FIXME.
+In order to run the application, use 'lein run' inline command
 
 ## Usage
 
-FIXME: explanation
+all tests scenarios are in 
+[text](test/toy_robot_simulation/toy_robot_test.clj)
+you can execute the tests if you want to avoid running the program
 
-    $ java -jar toy-robot-simulation-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2024 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+In order to run all tests, use 'lein test' inline command
