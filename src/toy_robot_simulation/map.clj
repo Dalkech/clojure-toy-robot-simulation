@@ -4,25 +4,20 @@
                                                           MAX_EXCLUDED
                                                           MIN_EXCLUDED X_KEY
                                                           Y_KEY]]))
-
-(defn- positionInMapBounds?[x y] 
+(defn- position-in-bounds?[x y] 
    (and (< x MAX_EXCLUDED)
         (> x MIN_EXCLUDED)
         (< y MAX_EXCLUDED)
         (> y MIN_EXCLUDED)
-   )
-)
+   ))
 
-(defn- directionIsCorrect? [direction]
-  (contains? CARDINALS direction)
-  )
+(defn- direction-is-correct? [direction]
+  (contains? CARDINALS direction))
 
-(defn positionIsValid? [x y direction] 
-  (and (positionInMapBounds? x y ) 
-       (directionIsCorrect? direction))
-  )
+(defn position-is-valid? [x y direction] 
+  (and (position-in-bounds? x y ) 
+       (direction-is-correct? direction)))
 
-(defn coordinatesAreValid? [coordinates]
-  (positionIsValid? (X_KEY coordinates) (Y_KEY coordinates) (DIRECTION_KEY coordinates) 
-  )
-)
+(defn coordinates-are-valid? [coordinates]
+  (position-is-valid? (X_KEY coordinates) (Y_KEY coordinates) (DIRECTION_KEY coordinates) 
+  ))

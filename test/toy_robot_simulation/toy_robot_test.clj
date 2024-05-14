@@ -7,13 +7,13 @@
   (use 'toy-robot-simulation.toy-robot :reload))
 
 (defn commandThenPosition [command]
- (robot/executeCommand command)
- (robot/executeCommand "REPORT"))
+ (robot/execute-command command)
+ (robot/execute-command "REPORT"))
 
 (deftest emptyPosition
   (testing
    (reloadRobot) 
-   (is (nil? (robot/executeCommand "REPORT")))))
+   (is (nil? (robot/execute-command "REPORT")))))
 
 (deftest multiplePlacement
   (testing 
@@ -26,26 +26,26 @@
 
 (deftest scenario-a 
   (reloadRobot)
-  (robot/executeCommand "PLACE 0 0 NORTH")
-  (robot/executeCommand "MOVE")
+  (robot/execute-command "PLACE 0 0 NORTH")
+  (robot/execute-command "MOVE")
 
-  (is (= "0 1 NORTH" (robot/executeCommand "REPORT")))
+  (is (= "0 1 NORTH" (robot/execute-command "REPORT")))
 )
 
 (deftest scenario-b
   (reloadRobot)
-  (robot/executeCommand "PLACE 0 0 NORTH")
-  (robot/executeCommand "LEFT")
-  (robot/executeCommand "MOVE")
+  (robot/execute-command "PLACE 0 0 NORTH")
+  (robot/execute-command "LEFT")
+  (robot/execute-command "MOVE")
 
-  (is (= "0 0 WEST" (robot/executeCommand "REPORT"))))
+  (is (= "0 0 WEST" (robot/execute-command "REPORT"))))
 
 (deftest scenario-c
   (reloadRobot)
-  (robot/executeCommand "PLACE 1 2 EAST")
-  (robot/executeCommand "MOVE")
-  (robot/executeCommand "MOVE")
-  (robot/executeCommand "LEFT")
-  (robot/executeCommand "MOVE")
+  (robot/execute-command "PLACE 1 2 EAST")
+  (robot/execute-command "MOVE")
+  (robot/execute-command "MOVE")
+  (robot/execute-command "LEFT")
+  (robot/execute-command "MOVE")
 
-  (is (= "3 3 NORTH" (robot/executeCommand "REPORT"))))
+  (is (= "3 3 NORTH" (robot/execute-command "REPORT"))))

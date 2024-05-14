@@ -14,25 +14,25 @@
 (def ^:const ALLOWED_COMMANDS #{"PLACE" "MOVE" "LEFT" "RIGHT" "REPORT"})
 (def ^:const PLACE_ARGUMENTS_LENGTH 4)
 
-(defn- splitCommand [command]
-  (str/split command #" "))
-
-(defn- throwWrongCommandException [command]
+(defn- throw-wrong-command [command]
   (throw (Exception. (str "wrong command : " command))))
 
-(defn- isValidCommand? [name]
+(defn- split-command [command]
+  (str/split command #" "))
+
+(defn- is-valid-command? [name]
   (contains? ALLOWED_COMMANDS name))
 
-(defn- isValidPLACECOMMAND? [split]
+(defn- is-valid-PLACE-command? [split]
   (and (= PLACE (first split)) (= PLACE_ARGUMENTS_LENGTH (count split))))
 
-(defn parse [command coordinates]
+(defn execute [command coordinates]
   (when (str/blank? command)
-    (throwWrongCommandException command))
+    (throw-wrong-command command))
 
-  (let [split (splitCommand command) name (first split)]
-    (if (isValidCommand? name)
-      (if (isValidPLACECOMMAND? split)
+  (let [split (split-command command) name (first split)]
+    (if (is-valid-command? name)
+      (if (is-valid-PLACE-command? split)
         ;; special case PLACE, ignore the command name and pass the coordinates
         (apply place/execute (conj (subvec split 1) coordinates))
         (cond
@@ -40,5 +40,5 @@
           (= name LEFT)  (left/execute coordinates)
           (= name MOVE)  (move/execute coordinates)
           (= name REPORT) (report/execute coordinates)
-          :else (throwWrongCommandException command)))
-      (throwWrongCommandException command))))
+          :else (throw-wrong-command command)))
+      (throw-wrong-command command))))

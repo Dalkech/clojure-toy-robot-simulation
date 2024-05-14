@@ -1,9 +1,6 @@
 (ns toy-robot-simulation.core
   (:gen-class) 
-  (:require [toy-robot-simulation.commande-manager :as commande-manager]
-            [toy-robot-simulation.toy-robot :as robot]))
-
-
+  (:require [toy-robot-simulation.toy-robot :as robot]))
 
 (defn print-summary[]
   (println
@@ -17,16 +14,14 @@
   ))
   
 (defn user-input []
-  (println "Choose a new command")
+  (println "\nChoose a new command")
   (let [input (read-line)]
     (when (not (= "exit" input))
-     (try (-> (robot/executeCommand input) (println )) 
+     (try (-> (robot/execute-command input) (println )) 
        (catch Exception e (println (.getMessage e))))
      (user-input))))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
+(defn -main [& args]
   (print-summary)
   (user-input)
   (println "end"))

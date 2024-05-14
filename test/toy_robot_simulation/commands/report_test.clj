@@ -12,5 +12,4 @@
 (deftest ignored-inputs
   (testing "multiple wrong placements"
     (are [parameter] (nil? (execute parameter))
-      ""
-      {})))
+      "" {})))

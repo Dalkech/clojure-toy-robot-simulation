@@ -2,15 +2,15 @@
    (:require [toy-robot-simulation.global-constant :refer [DIRECTION_KEY EAST
                                                            NORTH SOUTH WEST]]))
 
-(defn newDirection [coordinates direction]
+(defn set-direction [coordinates direction]
   (conj coordinates {DIRECTION_KEY direction})
   )
 
 (defn execute [coordinates]
   (let [direction (DIRECTION_KEY coordinates)]
     (cond 
-      (= direction NORTH ) (newDirection coordinates EAST)
-      (= direction EAST ) (newDirection coordinates SOUTH)
-      (= direction SOUTH)  (newDirection coordinates WEST)
-      (= direction WEST ) (newDirection coordinates NORTH)
+      (= direction NORTH ) (set-direction coordinates EAST)
+      (= direction EAST ) (set-direction coordinates SOUTH)
+      (= direction SOUTH)  (set-direction coordinates WEST)
+      (= direction WEST ) (set-direction coordinates NORTH)
       )))
